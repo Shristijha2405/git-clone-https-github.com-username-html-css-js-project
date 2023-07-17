@@ -1,0 +1,54 @@
+
+HTML To-Do App
+
+
+User
+To do app through html
+
+ChatGPT
+Sure! I can help you create a simple to-do app using HTML. Here's an example:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-Do App</h1>
+  
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <button onclick="addTask()">Add Task</button>
+  
+  <ul id="taskList"></ul>
+  
+  <script>
+    function addTask() {
+      var input = document.getElementById("taskInput");
+      var task = input.value;
+      
+      if (task === '') {
+        alert("Please enter a task!");
+        return;
+      }
+      
+      var listItem = document.createElement("li");
+      listItem.innerHTML = task;
+      
+      listItem.onclick = function() {
+        this.classList.toggle("completed");
+      };
+      
+      document.getElementById("taskList").appendChild(listItem);
+      
+      input.value = '';
+    }
+  </script>
+</body>
+</html>
