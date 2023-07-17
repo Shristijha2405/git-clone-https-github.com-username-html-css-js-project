@@ -1,13 +1,6 @@
  
 CSS Resume Builder
 
-
-User
-Resume builder through css
-
-ChatGPT
-To create a resume builder using CSS, you'll need to combine HTML markup with CSS styling. Below is an example of a simple resume builder form using CSS:
-
 html
 Copy code
 <!DOCTYPE html>
